@@ -7,18 +7,18 @@ package com.example.giddu.tourguideapp;
 public class Cuisine {
 
     private int imgResourceID;
-    private String name;
+    private int name;
     private int numRestaurants;
     private static final int NO_IMAGE_PROVIDED = -1;
 
-    public Cuisine(String name, int imgResourceID, int numRestaurants) {
+    public Cuisine(int name, int imgResourceID, int numRestaurants) {
         this.name = name;
         this.imgResourceID = imgResourceID;
         this.numRestaurants = numRestaurants;
 
     }
 
-    public String getName() {
+    public int getName() {
         return name;
     }
 

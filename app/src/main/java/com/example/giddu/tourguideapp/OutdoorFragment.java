@@ -27,7 +27,7 @@ public class OutdoorFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.viewspot_list, container, false);
 
         sightsList = new ArrayList<>();
-        sightsList.add(new ViewSpot(R.drawable.muir_woods, "Muir Woods"));
+        sightsList.add(new ViewSpot(R.drawable.muir_woods, R.string.muir));
 
 
 

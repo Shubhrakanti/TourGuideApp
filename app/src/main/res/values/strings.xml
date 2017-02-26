@@ -2,5 +2,20 @@
     <string name="app_name">TourGuideApp</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alcatraz">Alcatraz</string>
+    <string name="aqofbay">Aquarium of the Bay</string>
+    <string name="chinatown">Chinatown</string>
+    <string name="crocker">Crocker Galleria</string>
+    <string name="goldengate">Golden Gate Bridge</string>
+    <string name="icamerican">American</string>
+    <string name="icasian">Asian</string>
+    <string name="icindian">Indian</string>
+    <string name="lombard">Lombard Street</string>
+    <string name="muir">Muir Woods</string>
+    <string name="pier39">Pier 39</string>
+    <string name="stonestown">Stonestown Galleria</string>
+    <string name="unionsquare">Union Square</string>
+    <string name="westfield">Westfield</string>
+    <string name="fisherman">Fisherman Wharf</string>
+
 </resources>

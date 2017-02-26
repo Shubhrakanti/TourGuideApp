@@ -23,9 +23,9 @@ public class RestaurantsFragments extends Fragment {
 
 
         cuisineList = new ArrayList();
-        cuisineList.add(new Cuisine("Asian", R.drawable.ic_asian_cuisine, 21));
-        cuisineList.add(new Cuisine("Indian", R.drawable.ic_indian_cuisine, 21));
-        cuisineList.add(new Cuisine("American", R.drawable.ic_american_cuisine, 21));
+        cuisineList.add(new Cuisine(R.string.icasian, R.drawable.ic_asian_cuisine, 21));
+        cuisineList.add(new Cuisine(R.string.icindian, R.drawable.ic_indian_cuisine, 21));
+        cuisineList.add(new Cuisine(R.string.icamerican, R.drawable.ic_american_cuisine, 21));
 
         CuisineFragmentAdapter cuisineFragmentAdapter = new CuisineFragmentAdapter(getContext(), cuisineList);
 

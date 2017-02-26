@@ -7,10 +7,10 @@ package com.example.giddu.tourguideapp;
 public class ViewSpot {
 
     private int imgResourceID;
-    private String name;
+    private int name;
     private static final int NO_IMAGE_PROVIDED = -1;
 
-    public ViewSpot(int imgResourceID, String name) {
+    public ViewSpot(int imgResourceID, int name) {
         this.imgResourceID = imgResourceID;
         this.name = name;
     }
@@ -19,7 +19,7 @@ public class ViewSpot {
         return imgResourceID;
     }
 
-    public String getName() {
+    public int getName() {
         return name;
     }
 

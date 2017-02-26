@@ -17,8 +17,11 @@ import java.util.ArrayList;
 
 public class CuisineFragmentAdapter extends ArrayAdapter<Cuisine> {
 
+    Context m;
+
     public CuisineFragmentAdapter(Context context, ArrayList<Cuisine> objects) {
         super(context, 0, objects);
+        m = context;
 
     }
 
@@ -34,7 +37,8 @@ public class CuisineFragmentAdapter extends ArrayAdapter<Cuisine> {
         Cuisine currentCuisine = getItem(position);
 
         TextView cuisineNameTextView = (TextView) listItemView.findViewById(R.id.cuisineNameTextView);
-        cuisineNameTextView.setText(currentCuisine.getName());
+        String name = m.getResources().getString(currentCuisine.getName());
+        cuisineNameTextView.setText(name);
 
         TextView numRestaurantsTextView = (TextView) listItemView.findViewById(R.id.numRestTextView);
         numRestaurantsTextView.setText(String.valueOf(currentCuisine.getNumRestaurants()));

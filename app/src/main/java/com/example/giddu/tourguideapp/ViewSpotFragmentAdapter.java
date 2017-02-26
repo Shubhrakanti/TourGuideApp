@@ -16,8 +16,11 @@ import java.util.ArrayList;
 
 public class ViewSpotFragmentAdapter extends ArrayAdapter<ViewSpot> {
 
+    Context m;
+
     public ViewSpotFragmentAdapter(Context context, ArrayList<ViewSpot> objects) {
         super(context, 0, objects);
+        m = context;
     }
 
     @Override
@@ -31,7 +34,8 @@ public class ViewSpotFragmentAdapter extends ArrayAdapter<ViewSpot> {
         ViewSpot currentViewSpot = getItem(position);
 
         TextView viewSpotNameTextView = (TextView) listItemView.findViewById(R.id.viewspotNameTextView);
-        viewSpotNameTextView.setText(currentViewSpot.getName());
+        String name = m.getResources().getString(currentViewSpot.getName());
+        viewSpotNameTextView.setText(name);
 
         ImageView viewSpotImageView = (ImageView) listItemView.findViewById(R.id.viewspotImageView);
         if (currentViewSpot.hasImage()) {

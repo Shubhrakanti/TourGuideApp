@@ -28,10 +28,10 @@ public class ShoppingFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.viewspot_list, container, false);
 
         sightsList = new ArrayList<>();
-        sightsList.add(new ViewSpot(R.drawable.westfield_mall, "Westfield"));
-        sightsList.add(new ViewSpot(R.drawable.stonestown_galleria, "Stonestown Galleria"));
-        sightsList.add(new ViewSpot(R.drawable.crocker_galleria, "Crocker Galleria"));
-        sightsList.add(new ViewSpot(R.drawable.union_square, "Union Square"));
+        sightsList.add(new ViewSpot(R.drawable.westfield_mall, R.string.westfield));
+        sightsList.add(new ViewSpot(R.drawable.stonestown_galleria, R.string.stonestown));
+        sightsList.add(new ViewSpot(R.drawable.crocker_galleria, R.string.crocker));
+        sightsList.add(new ViewSpot(R.drawable.union_square, R.string.crocker));
 
 
         ViewSpotFragmentAdapter viewSpotFragmentAdapter = new ViewSpotFragmentAdapter(getContext(), sightsList);
